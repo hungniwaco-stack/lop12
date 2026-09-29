@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lớp 12 · Kết nối tri thức với cuộc sống</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --text: #0f172a;
+      --muted: #64748b;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: linear-gradient(135deg, #1d4ed8, #2563eb);
+      color: #fff;
+      padding: 64px 20px 76px;
+      text-align: center;
+    }
+    header h1 { font-size: 2.2rem; margin-bottom: 8px; }
+    header p { opacity: 0.92; max-width: 640px; margin: 0 auto; font-size: 1.05rem; }
+    main {
+      flex: 1;
+      max-width: 1000px;
+      width: 100%;
+      margin: -32px auto 0;
+      padding: 0 20px 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 26px 16px;
+      text-align: center;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 26px rgba(15, 23, 42, .08);
+    }
+    .card .icon { font-size: 2.3rem; line-height: 1; }
+    .card .name { font-weight: 600; margin-top: 10px; }
+    .card .tag { font-size: .8rem; color: var(--muted); margin-top: 2px; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      font-size: .85rem;
+      border-top: 1px solid var(--border);
+    }
+    @media (max-width: 480px) {
+      header h1 { font-size: 1.7rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lớp 12 · Kết nối tri thức với cuộc sống</h1>
+    <p>Trang học tập cá nhân — tổng hợp các môn học theo chương trình SGK Kết nối tri thức.</p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <div class="card"><div class="icon">📐</div><div class="name">Toán</div><div class="tag">Toán học</div></div>
+      <div class="card"><div class="icon">📚</div><div class="name">Ngữ Văn</div><div class="tag">Văn học</div></div>
+      <div class="card"><div class="icon">🌏</div><div class="name">Tiếng Anh</div><div class="tag">Ngoại ngữ</div></div>
+      <div class="card"><div class="icon">⚛️</div><div class="name">Vật Lý</div><div class="tag">Khoa học tự nhiên</div></div>
+      <div class="card"><div class="icon">🧪</div><div class="name">Hóa Học</div><div class="tag">Khoa học tự nhiên</div></div>
+      <div class="card"><div class="icon">🧬</div><div class="name">Sinh Học</div><div class="tag">Khoa học tự nhiên</div></div>
+      <div class="card"><div class="icon">🏛️</div><div class="name">Lịch Sử</div><div class="tag">Khoa học xã hội</div></div>
+      <div class="card"><div class="icon">🗺️</div><div class="name">Địa Lí</div><div class="tag">Khoa học xã hội</div></div>
+      <div class="card"><div class="icon">⚖️</div><div class="name">GDCD</div><div class="tag">Giáo dục</div></div>
+    </div>
+  </main>
+
+  <footer>© 2026 · lop12.huuhungai.com</footer>
+</body>
+</html>
